@@ -1,0 +1,32 @@
+{
+    "precio": {
+        "patterns": ["cuanto", "costo", "precio", "valor", "cobran", "tarifa", "cuesta", "sale", "vale"],
+        "required_entities": ["tipo_servicio"],
+        "responses": {
+            "default": "Los precios varían según el tipo de encuadernación:",
+            "tesis": "La encuadernación de tesis cuesta desde $300. El precio puede variar según el número de páginas y el tipo de acabado.",
+            "libro": "La encuadernación de libros cuesta desde $200, dependiendo del tamaño y material.",
+            "revista": "La encuadernación de revistas cuesta desde $150."
+        }
+    },
+    "tiempo": {
+        "patterns": ["tiempo", "demora", "tarda", "días", "cuando", "plazo"],
+        "required_entities": ["tipo_servicio"],
+        "responses": {
+            "default": "Los tiempos de entrega son:",
+            "tesis": "La encuadernación de tesis toma 3-4 días hábiles.",
+            "libro": "La encuadernación de libros toma 2-3 días hábiles.",
+            "urgente": "Contamos con servicio urgente con recargo adicional."
+        }
+    },
+    "material": {
+        "patterns": ["material", "tapa", "papel", "tipo", "calidad"],
+        "required_entities": ["tipo_material"],
+        "responses": {
+            "default": "Ofrecemos varios tipos de materiales:",
+            "tapa_dura": "La tapa dura es ideal para tesis y libros que requieren mayor durabilidad.",
+            "rustica": "La encuadernación rústica es perfecta para libros de uso frecuente.",
+            "espiral": "El espiral es económico y práctico para documentos de consulta."
+        }
+    }
+}

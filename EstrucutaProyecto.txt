@@ -1,0 +1,61 @@
+proyecto_helpdesk_2/
+|
+|
+|----app/
+|	|
+|	|--data/
+|	|	|-- knowledge_base.json
+|	|
+|	|--models/
+|	|	|--analyzer.py
+|	|	|--intent.py
+|	|	|--session.py
+|	|----nlp/
+|	|	|--analyzer.py
+|	|	|--entities.py
+|	|	|--intent.py
+|	|	|--response.py
+|	|--routes/
+|	|	|--chat.py
+|	|--services/
+|	|	|--intent_service.py
+|	|	|--response_service.py
+|	|--utils/
+|	|	|
+|	|	|--nlp_utils.py
+|	|	
+|	|--__init__.py
+|
+|
+|-----app_config/
+|		|---default.py
+|		|---development.py
+|		|---production.py
+|
+|----static/
+|	|
+|	|----css/
+|	|	|--chat.css
+|	|	|--style.css
+|	|
+|	|-----js/
+|	|	|--chat.js
+|	|	|--utils.js
+|
+|
+|---templates/
+|	|	
+|	|
+|	|---index.html
+|
+|
+|--tests/
+|	|---test_analyzer.py
+|	|---test_intent.py
+|	|---test_response.py
+|	
+|
+|---.env
+|--app.py
+|--config.py
+|--requirements.txt

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Encuadernación - Chat de Ayuda</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>Servicio de Encuadernación</h1>
+                <p class="subtitle">Asistente Virtual</p>
+            </div>
+        </header>
+
+        <!-- Main Chat Container -->
+        <main class="chat-container">
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Los mensajes se agregarán aquí dinámicamente -->
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator hidden" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="typing-text">El asistente está escribiendo...</div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-container">
+                <textarea 
+                    id="messageInput" 
+                    class="chat-input" 
+                    placeholder="Escribe tu mensaje aquí..."
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="send-button" aria-label="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+
+            <!-- Suggestions -->
+            <div class="suggestions">
+                <p class="suggestions-title">Sugerencias:</p>
+                <div class="suggestions-container">
+                    <button class="suggestion-button">¿Cuánto cuesta encuadernar una tesis?</button>
+                    <button class="suggestion-button">¿Qué materiales utilizan?</button>
+                    <button class="suggestion-button">¿Cuánto tiempo tarda el servicio?</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Servicio de Encuadernación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
