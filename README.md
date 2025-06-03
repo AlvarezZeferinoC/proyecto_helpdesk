@@ -51,3 +51,4 @@ proyecto_helpdesk_2/
 4. Instalar dependencias: `pip install -r requirements.txt`
 5. Descargar modelos de spaCy: `python -m spacy download es_core_news_md`
 7. Ejecutar: `python app.py`
+8. El proyecto estará ejecutandoe (Running) en http://127.0.0.1:5000
