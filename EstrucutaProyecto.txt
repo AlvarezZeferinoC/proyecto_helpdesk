@@ -23,7 +23,7 @@ proyecto_helpdesk_2/
 |	|--utils/
 |	|	|
 |	|	|--nlp_utils.py
-|	|	
+|	|
 |	|--__init__.py
 |
 |
@@ -44,7 +44,7 @@ proyecto_helpdesk_2/
 |
 |
 |---templates/
-|	|	
+|	|
 |	|
 |	|---index.html
 |
@@ -53,7 +53,7 @@ proyecto_helpdesk_2/
 |	|---test_analyzer.py
 |	|---test_intent.py
 |	|---test_response.py
-|	
+|
 |
 |---.env
 |--app.py
